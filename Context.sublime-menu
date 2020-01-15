@@ -1,0 +1,7 @@
+[
+  {
+    "caption"  : "SourceLinker: Open URL for line",
+    "id"      : "sourcelinker-link-line",
+    "command" : "sourcelinker"
+  }
+]
