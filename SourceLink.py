@@ -39,8 +39,9 @@ class SourcelinkerCommand( sublime_plugin.TextCommand ):
         else:
             git_config_path = self.getoutput( "git remote show origin -n" )
             if git_config_path:
-                p = re.compile( r"( .+:  )*( [\w\d\.]+ )[:|@]/?/?( .* )" )
+                p = re.compile( r"(.+: )*([\w\d\.]+)[:|@]/?/?(.*)" )
                 parts = p.findall( git_config_path )
+                print(git_config_path)
                 git_config = parts[0][2]
                 if ':' in git_config:
                     data['domain'], data['user'], data['repo'] = git_config.replace( ".git", "" ).replace( ":", "/" ).split( "/" )
