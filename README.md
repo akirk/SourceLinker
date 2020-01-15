@@ -17,9 +17,7 @@ You can also add custom URL configuration via project settings:
 ```
 
 # Installation
-The easiest is to install using [Package control](https://sublime.wbond.net/).
-
-To install manually, you can clone Git repository directly:
+To install, please clone Git repository directly:
 * `cd ~/Library/Application Support/Sublime Text 3/Packages/`
 * `git clone git@github.com:akirk/SourceLinker.git`
 * Restart Sublime Text
